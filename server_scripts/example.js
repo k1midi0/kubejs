@@ -21,7 +21,7 @@ ServerEvents.recipes(event =>{
     )//工作台红石铁板木棍合成标靶
     event.shapeless("tacz:target_minecart",["tacz:target","minecraft:minecart"])//工作台标靶和矿车无序合成
     event.stonecutting("tacz:statue",Item.of("minecraft:smooth_stone",2))//两个平滑石切割出一个石像
-    //标靶和和石像
+    //标靶和石像
 
 
 
