@@ -104,6 +104,21 @@ ServerEvents.recipes(event =>{
     ).id("kjsm:tacz/ammo_16mm_manual_only")//给配方id加上muanual_only标识，表示这个配方只能手动合成
 
 
+    event.shaped(//铁管，木头，打火石合成燧发枪
+        Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:1,GunFireMode:"SEMI",GunId:"qkl:fk15",HasBulletInBarrel:1b}'),
+        ["  G",
+         "DGB",
+         "MM "  
+        ],
+        {
+            G:"create:cardboard_sword",//暂时用纸管代替铁管
+            D:"minecraft:flint_and_steel",//打火石
+            B:"minecraft:stick",//木棍
+            M:"minecraft:flint_and_steel"//木头
+        }
+    )
+
+
 
 
 })
