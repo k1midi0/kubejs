@@ -5,6 +5,7 @@
 ServerEvents.recipes(event =>{
     event.remove({mod:"tacz"})//移除tacz的所有原版配方
     event.remove({ mod:"qkl"})//移除巧克力人枪包的所有配方
+    event.remove({output:"create:empty_blaze_burner"})//移除烈焰人燃烧室配方，电气时代的锅炉加热器替代
     const create = event.recipes.create
     event.shaped(
         "tacz:target",
@@ -101,6 +102,8 @@ ServerEvents.recipes(event =>{
             Item.of("create:cardboard")
         ]
     ).id("kjsm:tacz/ammo_16mm_manual_only")//给配方id加上muanual_only标识，表示这个配方只能手动合成
+
+
 
 
 })
