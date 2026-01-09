@@ -2,11 +2,11 @@
 
 // Visit the wiki for more info - https://kubejs.com/
 
-ServerEvents.recipes(event => {
-    event.remove({ mod: "tacz" })//移除tacz的所有原版配方
-    event.remove({ mod: "qkl" })//移除巧克力人枪包的所有配方
-    event.remove({ output: "create:empty_blaze_burner" })//移除烈焰人燃烧室配方，电气时代的锅炉加热器替代
-    const create = event.recipes.create
+ServerEvents.recipes(event =>{
+    event.remove({mod:"tacz"})//移除tacz的所有原版配方
+    event.remove({ mod:"qkl"})//移除巧克力人枪包的所有配方
+    event.remove({output:"create:empty_blaze_burner"})//移除烈焰人燃烧室配方，电气时代的锅炉加热器替代
+    const create = event.recipes.create//创建一个快捷方式来使用Create的配方方法
     event.shaped(
         "tacz:target",
         [
@@ -66,7 +66,7 @@ ServerEvents.recipes(event => {
     //     "sequence":[{"type":"create:deploying","ingredients":[{"item":"sentrymechanicalarm:unfinished_ammo"},{"item":"create:copper_sheet"}],"results":[{"item":"sentrymechanicalarm:unfinished_ammo"}]},{"type":"create:deploying","ingredients":[{"item":"sentrymechanicalarm:unfinished_ammo"},{"item":"create:copper_sheet"}],"results":[{"item":"sentrymechanicalarm:unfinished_ammo"}]},{"type":"create:deploying","ingredients":[{"item":"sentrymechanicalarm:unfinished_ammo"},{"item":"minecraft:gunpowder"}],"results":[{"item":"sentrymechanicalarm:unfinished_ammo"}]},{"type":"create:pressing","ingredients":[{"item":"sentrymechanicalarm:unfinished_ammo"}],"results":[{"item":"sentrymechanicalarm:unfinished_ammo"}]}],"transitionalItem":{"item":"sentrymechanicalarm:unfinished_ammo"}
     //     //序列化组装过程：使用未完成弹药作为过渡物，经过4个步骤（2次放置铜板，1次放置火药，1次压制）最终产出9发tacz:762x54弹药
     // })
-    // //以此为参照添加7.5x52弹药的配方
+    //以此为参照添加7.5x52弹药的配方
     event.custom({
         "type": "create:sequenced_assembly",
         "ingredient": { "type": "forge:partial_nbt", "item": "sentrymechanicalarm:unfinished_ammo", "nbt": { "AmmoId": "qkl:rb10" } },

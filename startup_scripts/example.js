@@ -1,6 +1,5 @@
-// priority: 0
+StartupEvents.registry('item', event => {
+  // 注册一把自定义剑
+  event.create('test_sword', 'sword')//创建一把名为test_sword的剑
 
-// Visit the wiki for more info - https://kubejs.com/
-
-console.info('Hello, World! (Loaded startup scripts)')
-
+});
