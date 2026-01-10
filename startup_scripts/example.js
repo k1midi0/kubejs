@@ -3,7 +3,18 @@
 // 适用于 StartupEvents.registry('item', event => { ... })
 // 所有内容均为注释，无实际代码，仅作开发参考
 // ===========================================================
+// basic      — 基础物品（默认类型），如木棍、火把、自定义非工具物品
+// sword      — 剑：用于近战攻击，支持“锋利”“抢夺”等附魔
+// pickaxe    — 镐：用于挖掘石头、矿石等硬质方块
+// axe        — 斧：用于高效砍伐木头，也可作为高伤害慢速武器
+// shovel     — 铲：用于快速挖掘泥土、沙子、雪等松软方块
+// shears     — 剪刀：用于剪羊毛、树叶、蜂巢等，不破坏方块本身
+// hoe        — 锄：用于将泥土/草方块变为耕地，或右键砂土制作路径
 
+// helmet     — 头盔：装备在头部的护甲
+// chestplate — 胸甲：装备在身体的护甲（通常防御最高）
+// leggings   — 护腿：装备在腿部的护甲
+// boots      — 靴子：装备在脚部的护甲
 // ┌──────────────────────────────┐
 // │ 基础属性设置                 │
 // └──────────────────────────────┘
@@ -181,11 +192,14 @@ StartupEvents.registry('item', event => {
   event.create('test_sword', 'sword')//创建一把名为test_sword的剑，测试用途
 
 
-  event.create('ironboard_sword', 'sword')
-          .displayName('铁管')
-          .maxStackSize(1)
-          .tier('iron')                 // 使用铁制工具属性（耐久 250，挖掘速度等）
-          .attackDamageBaseline(3.0)   // 基础攻击伤害 = 3（和原版铁剑一致）
-          // .attackDamageBonus(1.0)   // 额外伤害（可选，总伤害 = baseline + bonus）
-          // .speed(-2.4)              // 攻击速度惩罚（原版剑默认值，通常不需要改）
+  event.create('ironboard_sword', 'sword')//铁管
+        .displayName('铁管')
+        .maxStackSize(1)
+        .tier('iron')                 // 使用铁制工具属性（耐久 250，挖掘速度等）
+        .attackDamageBaseline(3.0)   // 基础攻击伤害 = 3（和原版铁剑一致）
+        // .attackDamageBonus(1.0)   // 额外伤害（可选，总伤害 = baseline + bonus）
+        // .speed(-2.4)              // 攻击速度惩罚（原版剑默认值，通常不需要改）
+  event.create('metal_part', 'item')//金属零件
+        .displayName('金属零件')
+
 });
