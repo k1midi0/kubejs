@@ -141,8 +141,8 @@ ServerEvents.recipes(event => {
         ],
         {
             G: "create:cardboard_sword",//暂时用纸管代替铁管
-            T: ""//铁粒
-            D: ""//铁板
+            T: "",//铁粒
+            D: "",//铁板
             B: "minecraft:stick",//木棍
             M: "minecraft:stripped_oak_wood"//木头
         }
