@@ -123,3 +123,96 @@ ServerEvents.recipes(event =>{
 
 
 })
+// EntityEvents.hurt(event => {
+//     // 获取伤害来源（DamageSource）
+//     const source = event.getSource();
+//     console.log("[DEBUG] Damage source type: " + source.getType());
+//     // 检查是否来自玩家
+//     if (source.getType() !== "player") return;
+//     console.log("[DEBUG] Damage source is from a player.");
+//     // 获取真正的玩家实体
+//     const attacker = source.getEntity(); // ⭐ 这才是玩家！
+//     const victim = event.entity;
+//     console.log("[DEBUG] Attacker: " + attacker.getName() + ", Victim: " + victim.getName());
+//     // 安全检查
+//     if (!attacker || !attacker.isPlayer()) return;
+//     if (victim.isPlayer()) return; // 避免 PVP
+//     console.log("[DEBUG] Attacker is a player and victim is not a player.");
+//     // 检查武器
+//     const weapon = attacker.getMainHandItem();
+//     if (weapon.getId() !== "kubejs:ironboard_sword") return;
+//     console.log("[DEBUG] Attacker is using the Ironboard sword.");
+//     console.log("[SUCCESS] Ironboard sword hit!");
+
+//     // 应用击退
+//     const dx = attacker.x - victim.x;
+//     const dz = attacker.z - victim.z;
+//     const dist = Math.sqrt(dx * dx + dz * dz);
+//     Colsole.log("[DEBUG] Calculated distance: " + dist);
+//     if (dist > 0.1) {
+//         victim.setDeltaMovement((dx / dist) * 10.0, 5.0, (dz / dist) * 10.0);
+//     }
+//     console.log("[DEBUG] Applied knockback to victim.");
+// });
+
+// kubejs/server_scripts/test_hurt.js
+EntityEvents.hurt(event => {
+    const source = event.getSource();
+    if (source.getType() !== 'player') return;
+
+    console.log("✅ Damage type is 'player'");
+
+    const attacker = event.sourceEntity;
+    if (!attacker) {
+        console.log("❌ sourceEntity is null");
+        return;
+    }
+
+    console.log("Attacker exists, checking if player...");
+    if (!attacker.isPlayer()) {
+        console.log("❌ Attacker is not a player");
+        return;
+    }
+
+    const weapon = attacker.getMainHandItem();
+    console.log("Weapon ID:", weapon.getId());
+
+    if (weapon.getId() === 'kubejs:ironboard_sword') {
+        console.log("🎯 HIT WITH IRONBOARD SWORD!");
+        // 这里加击退
+        const victim = event.entity;
+        const dx = attacker.x - victim.x;
+        const dz = attacker.z - victim.z;
+        const dist = Math.sqrt(dx*dx + dz*dz);
+        if (dist > 0.1) {
+            victim.setDeltaMovement(dx/dist * 2.0, 0.4, dz/dist * 2.0);
+        }
+    }//不要管这堆，他不起作用
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// EntityEvents.hurt(event => {
+//     const source = event.getSource();
+//     if (source.getType() !== "player") return;
+
+//     console.log("=== DEBUG ===");
+//     console.log("sourceEntity exists:", event.sourceEntity !== null);
+//     console.log("sourceEntity type:", typeof event.sourceEntity);
+//     if (event.sourceEntity) {
+//         console.log("sourceEntity name:", event.sourceEntity.name);
+//         console.log("isPlayer:", event.sourceEntity.isPlayer());
+//     }
+//     console.log("=============");
+// })
