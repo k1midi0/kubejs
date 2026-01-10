@@ -131,8 +131,6 @@ ServerEvents.recipes(event => {
 
 })
 
-
-// =========================别管下面这坨==============================
     event.shaped(//CLF10-中折式霰弹枪配方草案
         Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:1,GunFireMode:"SEMI",GunId:"qkl:clf10",HasBulletInBarrel:1b}'),
         [
@@ -150,8 +148,8 @@ ServerEvents.recipes(event => {
         }
     )
 
+// =========================别管下面这坨==============================
 
-})
 // EntityEvents.hurt(event => {
 //     // 获取伤害来源（DamageSource）
 //     const source = event.getSource();
