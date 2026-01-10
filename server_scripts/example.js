@@ -119,7 +119,7 @@ ServerEvents.recipes(event => {
         }
     )
 
-    create.sequenced_assembly(//CLF10-中折式霰弹枪配方
+    create.sequenced_assembly(//CLF10-中折式霰弹枪配方（中间产物用的是铁锭，后面有专门的枪械中间产物可以替换）
         Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:1,GunFireMode:"SEMI",GunId:"qkl:clf10",HasBulletInBarrel:1b}'),
         "minecraft:iron_ingot",//输入铁锭
         [
@@ -138,7 +138,7 @@ ServerEvents.recipes(event => {
         create.deploying("minecraft:iron_ingot",["minecraft:iron_ingot","#minecraft:stripped"]),
         create.cutting("minecraft:iron_ingot","minecraft:iron_ingot"),//组装去皮木材，切割枪托、护木和握把
         ]
-    )
+    ).transitionalItem("minecraft:iron_ingot").loops(1)
 
     create.sequenced_assembly(//刺刀配方
         Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:30,GunFireMode:"SEMI",GunId:"qkl:m1905",HasBulletInBarrel:1b}'),
