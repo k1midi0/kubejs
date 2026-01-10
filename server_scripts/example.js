@@ -119,10 +119,20 @@ ServerEvents.recipes(event =>{
         }
     )
 
-
-
+    create.sequenced_assembly(//刺刀配方
+        Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:30,GunFireMode:"SEMI",GunId:"qkl:m1905",HasBulletInBarrel:1b}'),
+        "create:iron_sheet",//输入铁板
+        [create.deploying("create:iron_sheet",["create:iron_sheet","create:andesite_alloy"]),
+        create.deploying("create:iron_sheet",["create:iron_sheet","create:andesite_alloy"]),
+        create.pressing("create:iron_sheet","create:iron_sheet"),
+        create.deploying("create:iron_sheet",["create:iron_sheet","minecraft:stripped_oak_wood"]),
+        create.cutting("create:iron_sheet","create:iron_sheet")]//"神之手"依次组装安山合金，锻压，去皮橡木
+    ).transitionalItem("create:iron_sheet").loops(1)//中间物为铁板，循环1次
 
 })
+
+
+// =========================别管下面这坨==============================
 // EntityEvents.hurt(event => {
 //     // 获取伤害来源（DamageSource）
 //     const source = event.getSource();
@@ -189,20 +199,6 @@ EntityEvents.hurt(event => {
         }
     }//不要管这堆，他不起作用
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // EntityEvents.hurt(event => {
 //     const source = event.getSource();
 //     if (source.getType() !== "player") return;
