@@ -119,7 +119,7 @@ ServerEvents.recipes(event => {
         }
     )
 
-    create.sequenced_assembly(//CLF10-中折式霰弹枪配方草案
+    create.sequenced_assembly(//CLF10-中折式霰弹枪配方
         Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:1,GunFireMode:"SEMI",GunId:"qkl:clf10",HasBulletInBarrel:1b}'),
         "minecraft:iron_ingot",//输入铁锭
         [
