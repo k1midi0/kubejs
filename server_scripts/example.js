@@ -133,10 +133,10 @@ ServerEvents.recipes(event => {
         create.deploying("minecraft:iron_ingot",["minecraft:iron_ingot","minecraft:lightning_rod"]),//组装撞针
         create.deploying("minecraft:iron_ingot",["minecraft:iron_ingot","create:cardboard_sword"]),
         create.deploying("minecraft:iron_ingot",["minecraft:iron_ingot","kubejs:ironboard_sword"]),//组装铁管作为枪管
-        create.deploying("minecraft:iron_ingot",["minecraft:iron_ingot","#minecraft:stripped"]),
-        create.deploying("minecraft:iron_ingot",["minecraft:iron_ingot","#minecraft:stripped"]),
-        create.deploying("minecraft:iron_ingot",["minecraft:iron_ingot","#minecraft:stripped"]),
-        create.cutting("minecraft:iron_ingot","minecraft:iron_ingot"),//组装去皮木材，切割枪托、护木和握把
+        create.deploying("minecraft:iron_ingot",["minecraft:iron_ingot","#kubejs:stripped_wood"]),
+        create.deploying("minecraft:iron_ingot",["minecraft:iron_ingot","#kubejs:stripped_wood"]),
+        create.deploying("minecraft:iron_ingot",["minecraft:iron_ingot","#kubejs:stripped_wood"]),//组装去皮木材
+        create.cutting("minecraft:iron_ingot","minecraft:iron_ingot"),//切割去皮木材作为枪托、护木和握把
         ]
     ).transitionalItem("minecraft:iron_ingot").loops(1)
 
