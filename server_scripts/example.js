@@ -119,7 +119,22 @@ ServerEvents.recipes(event => {
         }
     )
 
-
+    event.shaped(
+        Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:1,GunFireMode:"SEMI",GunId:"qkl:clf10",HasBulletInBarrel:1b}'),
+        [
+            "   TG",
+            "   GB",
+            " DGB ",
+            "MM   "
+        ],
+        {
+            G: "create:cardboard_sword",//暂时用纸管代替铁管
+            T: ""
+            D: ""
+            B: "minecraft:stick",//木棍
+            M: "minecraft:stripped_oak_wood"//木头
+        }
+    )
 
 
 })
