@@ -119,7 +119,7 @@ ServerEvents.recipes(event => {
         }
     )
 
-    event.shaped(
+    event.shaped(//CLF10-中折式霰弹枪配方草案
         Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:1,GunFireMode:"SEMI",GunId:"qkl:clf10",HasBulletInBarrel:1b}'),
         [
             "   TG",
@@ -129,8 +129,8 @@ ServerEvents.recipes(event => {
         ],
         {
             G: "create:cardboard_sword",//暂时用纸管代替铁管
-            T: ""
-            D: ""
+            T: ""//铁粒
+            D: ""//铁板
             B: "minecraft:stick",//木棍
             M: "minecraft:stripped_oak_wood"//木头
         }
