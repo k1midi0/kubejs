@@ -112,7 +112,7 @@ ServerEvents.recipes(event => {
             "MM "
         ],
         {
-            G: "create:cardboard_sword",//暂时用纸管代替铁管
+            G: "kubejs:ironboard_sword",//铁管
             D: "minecraft:flint_and_steel",//打火石
             B: "minecraft:stick",//木棍
             M: "minecraft:stripped_oak_wood"//木头
@@ -132,7 +132,7 @@ ServerEvents.recipes(event => {
         create.pressing("minecraft:iron_ingot","minecraft:iron_ingot"),//锻压为机匣
         create.deploying("minecraft:iron_ingot",["minecraft:iron_ingot","minecraft:lightning_rod"]),//组装撞针
         create.deploying("minecraft:iron_ingot",["minecraft:iron_ingot","create:cardboard_sword"]),
-        create.deploying("minecraft:iron_ingot",["minecraft:iron_ingot","create:cardboard_sword"]),//组装铁管作为枪管（暂时用纸管代替）
+        create.deploying("minecraft:iron_ingot",["minecraft:iron_ingot","kubejs:ironboard_sword"]),//组装铁管作为枪管
         create.deploying("minecraft:iron_ingot",["minecraft:iron_ingot","#minecraft:stripped"]),
         create.deploying("minecraft:iron_ingot",["minecraft:iron_ingot","#minecraft:stripped"]),
         create.deploying("minecraft:iron_ingot",["minecraft:iron_ingot","#minecraft:stripped"]),
