@@ -1,4 +1,4 @@
-// ===========================================================
+// =========================方法解释==============================
 // KubeJS ItemBuilder 方法速查表（纯注释版）
 // 适用于 StartupEvents.registry('item', event => { ... })
 // 所有内容均为注释，无实际代码，仅作开发参考
@@ -178,6 +178,6 @@
 
 StartupEvents.registry('item', event => {
   // 注册一把自定义剑
-  event.create('test_sword', 'sword')//创建一把名为test_sword的剑
+  event.create('test_sword', 'sword')//创建一把名为test_sword的剑，测试用途
 
 });
