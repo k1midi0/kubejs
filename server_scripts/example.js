@@ -2,10 +2,10 @@
 
 // Visit the wiki for more info - https://kubejs.com/
 
-ServerEvents.recipes(event =>{
-    event.remove({mod:"tacz"})//移除tacz的所有原版配方
-    event.remove({ mod:"qkl"})//移除巧克力人枪包的所有配方
-    event.remove({output:"create:empty_blaze_burner"})//移除烈焰人燃烧室配方，电气时代的锅炉加热器替代
+ServerEvents.recipes(event => {
+    event.remove({ mod: "tacz" })//移除tacz的所有原版配方
+    event.remove({ mod: "qkl" })//移除巧克力人枪包的所有配方
+    event.remove({ output: "create:empty_blaze_burner" })//移除烈焰人燃烧室配方，电气时代的锅炉加热器替代
     const create = event.recipes.create//创建一个快捷方式来使用Create的配方方法
     event.shaped(
         "tacz:target",
@@ -183,9 +183,9 @@ EntityEvents.hurt(event => {
         const victim = event.entity;
         const dx = attacker.x - victim.x;
         const dz = attacker.z - victim.z;
-        const dist = Math.sqrt(dx*dx + dz*dz);
+        const dist = Math.sqrt(dx * dx + dz * dz);
         if (dist > 0.1) {
-            victim.setDeltaMovement(dx/dist * 2.0, 0.4, dz/dist * 2.0);
+            victim.setDeltaMovement(dx / dist * 2.0, 0.4, dz / dist * 2.0);
         }
     }//不要管这堆，他不起作用
 });

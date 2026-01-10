@@ -182,10 +182,10 @@ StartupEvents.registry('item', event => {
 
 
   event.create('ironboard_sword', 'sword')
-          .displayName('铁管')
-          .maxStackSize(1)
-          .tier('iron')                 // 使用铁制工具属性（耐久 250，挖掘速度等）
-          .attackDamageBaseline(3.0)   // 基础攻击伤害 = 3（和原版铁剑一致）
-          // .attackDamageBonus(1.0)   // 额外伤害（可选，总伤害 = baseline + bonus）
-          // .speed(-2.4)              // 攻击速度惩罚（原版剑默认值，通常不需要改）
+    .displayName('铁管')
+    .maxStackSize(1)
+    .tier('iron')                 // 使用铁制工具属性（耐久 250，挖掘速度等）
+    .attackDamageBaseline(3.0)   // 基础攻击伤害 = 3（和原版铁剑一致）
+  // .attackDamageBonus(1.0)   // 额外伤害（可选，总伤害 = baseline + bonus）
+  // .speed(-2.4)              // 攻击速度惩罚（原版剑默认值，通常不需要改）
 });
