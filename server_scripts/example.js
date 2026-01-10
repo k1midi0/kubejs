@@ -2,10 +2,10 @@
 
 // Visit the wiki for more info - https://kubejs.com/
 
-ServerEvents.recipes(event =>{
-    event.remove({mod:"tacz"})//移除tacz的所有原版配方
-    event.remove({ mod:"qkl"})//移除巧克力人枪包的所有配方
-    event.remove({output:"create:empty_blaze_burner"})//移除烈焰人燃烧室配方，电气时代的锅炉加热器替代
+ServerEvents.recipes(event => {
+    event.remove({ mod: "tacz" })//移除tacz的所有原版配方
+    event.remove({ mod: "qkl" })//移除巧克力人枪包的所有配方
+    event.remove({ output: "create:empty_blaze_burner" })//移除烈焰人燃烧室配方，电气时代的锅炉加热器替代
     const create = event.recipes.create//创建一个快捷方式来使用Create的配方方法
     event.shaped(
         "tacz:target",
@@ -131,8 +131,25 @@ ServerEvents.recipes(event =>{
 
 })
 
+    event.shaped(//CLF10-中折式霰弹枪配方草案
+        Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:1,GunFireMode:"SEMI",GunId:"qkl:clf10",HasBulletInBarrel:1b}'),
+        [
+            "   TG",
+            "   GB",
+            " DGB ",
+            "MM   "
+        ],
+        {
+            G: "create:cardboard_sword",//暂时用纸管代替铁管
+            T: "",//铁粒
+            D: "",//铁板
+            B: "minecraft:stick",//木棍
+            M: "minecraft:stripped_oak_wood"//木头
+        }
+    )
 
 // =========================别管下面这坨==============================
+
 // EntityEvents.hurt(event => {
 //     // 获取伤害来源（DamageSource）
 //     const source = event.getSource();
@@ -193,9 +210,9 @@ EntityEvents.hurt(event => {
         const victim = event.entity;
         const dx = attacker.x - victim.x;
         const dz = attacker.z - victim.z;
-        const dist = Math.sqrt(dx*dx + dz*dz);
+        const dist = Math.sqrt(dx * dx + dz * dz);
         if (dist > 0.1) {
-            victim.setDeltaMovement(dx/dist * 2.0, 0.4, dz/dist * 2.0);
+            victim.setDeltaMovement(dx / dist * 2.0, 0.4, dz / dist * 2.0);
         }
     }//不要管这堆，他不起作用
 });
