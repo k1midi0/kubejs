@@ -199,7 +199,7 @@ StartupEvents.registry('item', event => {
         .attackDamageBaseline(3.0)   // 基础攻击伤害 = 3（和原版铁剑一致）
         // .attackDamageBonus(1.0)   // 额外伤害（可选，总伤害 = baseline + bonus）
         // .speed(-2.4)              // 攻击速度惩罚（原版剑默认值，通常不需要改）
-  event.create('metal_part')//金属零件
-        .displayName('金属零件')
+  event.create('metal_part_t')//金属零件
+        .displayName('T型金属零件')
 
 });
