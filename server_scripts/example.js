@@ -154,25 +154,36 @@ ServerEvents.recipes(event => {
 
 
 EntityEvents.hurt(event => {
+    // 监听实体受伤事件
     const { entity, source } = event;
 
+    // 只处理伤害来源为玩家的情况
     if (source.getType() !== 'player') return;
 
     const player = source.actual;
+    // 确保实际来源存在且为玩家实体
     if (!player || !player.isPlayer()) return;
 
+    // 仅在玩家主手持有铁板剑时触发击退效果
     if (player.mainHandItem.id === 'kubejs:ironboard_sword') {
-        const look = player.getLookAngle(); // 返回 Vec3（Java 对象，但 KubeJS 包装了方法）
+        // 获取玩家的视线方向向量
+        const look = player.getLookAngle(); 
         
-        
-        // ✅ 使用 .x(), .y(), .z() 方法（推荐）
+        /**
+         * 运动向量：将视线向量放大 5 倍以作为速度
+         * x, y, z 分量分别对应世界坐标的速度分量
+         *
+         * @type {Vec3d}
+         */
         const motion = new Vec3d(
             look.x() * 5,
             look.y() * 5,
             look.z() * 5
         );
 
+        // 将计算得到的速度应用到被击中的实体上，实现击退/击飞效果
         entity.setDeltaMovement(motion);
+        // 日志输出，便于调试
         console.info('[KubeJS] Ironboard sword knockback applied!');
     }
 });
