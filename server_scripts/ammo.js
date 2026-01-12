@@ -43,6 +43,4 @@ ServerEvents.recipes(event => {
         ]
     ).id("kjsm:tacz/ammo_16mm_manual_only")//给配方id加上muanual_only标识，表示这个配方只能手动合成
 
-
-
 })
