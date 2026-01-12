@@ -5,7 +5,7 @@
 //无护木，一个剥皮木的轻型护木，两个剥皮木的重型护木
 //无机械瞄具，一个铁粒的轻型机械瞄具，两个铁粒的重型机械瞄具
 ServerEvents.recipes(event => {
-
+    const create = event.recipes.create//创建一个快捷方式来使用Create的配方方法
 
 
 

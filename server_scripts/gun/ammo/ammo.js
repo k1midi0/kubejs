@@ -1,4 +1,5 @@
 ServerEvents.recipes(event => {
+    const create = event.recipes.create//创建一个快捷方式来使用Create的配方方法
     // event.custom({//原版配方格式
     //     "type":"create:sequenced_assembly",//合成方式：序列化组装
     //     "ingredient":{"type":"forge:partial_nbt","item":"sentrymechanicalarm:unfinished_ammo","nbt":{"AmmoId":"tacz:762x54"}},//输入物：未完成弹药（部分nbt匹配，匹配AmmoId为tacz:762x54的）tacz用nbt区分弹药类型，而不是用不同的物品ID，物品id只用来表示弹药这个大类

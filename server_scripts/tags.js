@@ -1,28 +1,29 @@
 ServerEvents.tags("item", event => {//尽管是方块，但是是用于合成表，所以使用的是其物品属性
-                                    //如果用于世界中的方块属性，则应使用 ServerEvents.tags("block", event => {
+    //如果用于世界中的方块属性，则应使用 ServerEvents.tags("block", event => {
     event.add("kubejs:stripped_wood",
-        ["minecraft:stripped_oak_log",
-        "minecraft:stripped_spruce_log",
-        "minecraft:stripped_birch_log",
-        "minecraft:stripped_jungle_log",
-        "minecraft:stripped_acacia_log",
-        "minecraft:stripped_dark_oak_log",
-        "minecraft:stripped_mangrove_log",
-        "minecraft:stripped_cherry_log",
-        "minecraft:stripped_crimson_stem",
-        "minecraft:stripped_warped_stem",
-        "minecraft:stripped_bamboo_block",
-        "minecraft:stripped_oak_wood",
-        "minecraft:stripped_spruce_wood",
-        "minecraft:stripped_birch_wood",
-        "minecraft:stripped_jungle_wood",
-        "minecraft:stripped_acacia_wood",
-        "minecraft:stripped_dark_oak_wood",
-        "minecraft:stripped_mangrove_wood",
-        "minecraft:stripped_cherry_wood",
-        "minecraft:stripped_crimson_hyphae",
-        "minecraft:stripped_warped_hyphae",
-        "minecraft:stripped_bamboo_wood"]
+        [
+            "minecraft:stripped_oak_log",
+            "minecraft:stripped_spruce_log",
+            "minecraft:stripped_birch_log",
+            "minecraft:stripped_jungle_log",
+            "minecraft:stripped_acacia_log",
+            "minecraft:stripped_dark_oak_log",
+            "minecraft:stripped_mangrove_log",
+            "minecraft:stripped_cherry_log",
+            "minecraft:stripped_crimson_stem",
+            "minecraft:stripped_warped_stem",
+            "minecraft:stripped_bamboo_block",
+            "minecraft:stripped_oak_wood",
+            "minecraft:stripped_spruce_wood",
+            "minecraft:stripped_birch_wood",
+            "minecraft:stripped_jungle_wood",
+            "minecraft:stripped_acacia_wood",
+            "minecraft:stripped_dark_oak_wood",
+            "minecraft:stripped_mangrove_wood",
+            "minecraft:stripped_cherry_wood",
+            "minecraft:stripped_crimson_hyphae",
+            "minecraft:stripped_warped_hyphae",
+            "minecraft:stripped_bamboo_wood"]
     );
 });
 // 在 KubeJS 中，通过 ServerEvents.tags() 事件来添加、删除或修改标签（Tags）
@@ -42,28 +43,28 @@ ServerEvents.tags("item", event => {//尽管是方块，但是是用于合成表
 
 // 在事件回调中，event 对象提供以下常用方法：
 
-// event.add('标签名', '物品ID') 
+// event.add('标签名', '物品ID')
 // → 将指定物品 ID 添加到该标签中；如果标签不存在，则自动创建
 
-// event.add('标签名', ['物品ID1', '物品ID2', ...]) 
+// event.add('标签名', ['物品ID1', '物品ID2', ...])
 // → 批量添加多个物品到标签
 
-// event.add('目标标签', '#源标签') 
+// event.add('目标标签', '#源标签')
 // → 将整个源标签的内容嵌套进目标标签（注意源标签前加 #）
 
-// event.remove('标签名', '物品ID') 
+// event.remove('标签名', '物品ID')
 // → 从指定标签中移除某个物品
 
-// event.remove('标签名', ['物品ID1', '物品ID2', ...]) 
+// event.remove('标签名', ['物品ID1', '物品ID2', ...])
 // → 批量移除多个物品
 
-// event.removeAll('标签名') 
+// event.removeAll('标签名')
 // → 清空该标签中的所有条目
 
-// event.removeAllTagsFrom('物品ID') 
+// event.removeAllTagsFrom('物品ID')
 // → 移除该物品所拥有的所有标签（慎用！）
 
-// event.get('标签名').getObjectIds() 
+// event.get('标签名').getObjectIds()
 // → 获取该标签包含的所有物品 ID，返回一个字符串数组，可用于遍历或条件过滤
 
 // 标签名必须包含命名空间，例如：

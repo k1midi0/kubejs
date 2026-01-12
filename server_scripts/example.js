@@ -83,8 +83,8 @@ EntityEvents.hurt(event => {
     // 仅在玩家主手持有铁管时触发击退效果
     if (player.mainHandItem.id === 'kubejs:ironboard_sword') {
         // 获取玩家的视线方向向量
-        const look = player.getLookAngle(); 
-        
+        const look = player.getLookAngle();
+
         /**
          * 运动向量：将视线向量放大 5 倍以作为速度
          * x, y, z 分量分别对应世界坐标的速度分量
