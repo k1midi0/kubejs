@@ -9,6 +9,9 @@
 ServerEvents.recipes(event => {
     const create = event.recipes.create//创建一个快捷方式来使用Create的配方方法
 
-
+    create.cutting(//铁板切出小铁板
+        Item.of("kubejs:iron_sheet_small", 2),
+        "create:iron_sheet"
+    )
 
 })

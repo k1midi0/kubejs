@@ -34,5 +34,8 @@ StartupEvents.registry('item', event => {
     // .attackDamageBonus(1.0)   // 额外伤害（可选，总伤害 = baseline + bonus）
     // .speed(-2.4)              // 攻击速度惩罚（原版剑默认值，通常不需要改）
 
+event.create("iron_sheet_small")//注册小铁片
+        .displayName("小铁片")
+        .maxStackSize(64)
 
 })
