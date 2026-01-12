@@ -164,7 +164,7 @@ EntityEvents.hurt(event => {
     // 确保实际来源存在且为玩家实体
     if (!player || !player.isPlayer()) return;
 
-    // 仅在玩家主手持有铁板剑时触发击退效果
+    // 仅在玩家主手持有铁管时触发击退效果
     if (player.mainHandItem.id === 'kubejs:ironboard_sword') {
         // 获取玩家的视线方向向量
         const look = player.getLookAngle(); 
