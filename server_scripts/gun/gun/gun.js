@@ -3,9 +3,9 @@ ServerEvents.recipes(event => {
     event.shaped(//铁管，木头，打火石合成燧发枪
         Item.of('tacz:modern_kinetic_gun', '{GunCurrentAmmoCount:1,GunFireMode:"SEMI",GunId:"qkl:fk15",HasBulletInBarrel:1b}'),
         [
-            "  G",
-            "DGB",
-            "MM "
+            " DM",
+            " GB",
+            "GM "
         ],
         {
             G: "kubejs:ironboard_sword",//铁管
