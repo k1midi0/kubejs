@@ -6,7 +6,7 @@
 //无护木，一个剥皮木的轻型护木，两个剥皮木的重型护木，一个安山合金的轻型聚合物护木，两个安山合金的重型聚合物护木，安山合金（代替聚合物）
 //无机械瞄具，一个铁粒的轻型机械瞄具，两个铁粒的重型机械瞄具
 //全自动武器需要一个精密构件
-StartupEvents.registry('item', event => { 
+StartupEvents.registry('item', event => {
     event.create('Simple_receiver', 'basic')//历史枪械统一使用的简易机匣零件
 
     event.create('deagle_receiver', 'basic')//沙漠之鹰、黄金沙漠之鹰、永恒的机匣零件
@@ -23,6 +23,16 @@ StartupEvents.registry('item', event => {
 
 
 
+    event.create('metal_part_t')//金属零件
+        .displayName('T型金属零件')
+
+    event.create('ironboard_sword', 'sword')//铁管
+        .displayName('铁管')
+        .maxStackSize(1)
+        .tier('iron')                 // 使用铁制工具属性（耐久 250，挖掘速度等）
+        .attackDamageBaseline(1.0)   // 基础攻击伤害 = 3（和原版铁剑一致）
+    // .attackDamageBonus(1.0)   // 额外伤害（可选，总伤害 = baseline + bonus）
+    // .speed(-2.4)              // 攻击速度惩罚（原版剑默认值，通常不需要改）
 
 
- })
+})
