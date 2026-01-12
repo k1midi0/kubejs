@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
             create.cutting("minecraft:iron_ingot", "minecraft:iron_ingot"),//切割机匣粗胚
             create.pressing("minecraft:iron_ingot", "minecraft:iron_ingot"),//锻压为机匣
             create.deploying("minecraft:iron_ingot", ["minecraft:iron_ingot", "minecraft:lightning_rod"]),//组装撞针
-            create.deploying("minecraft:iron_ingot", ["minecraft:iron_ingot", "create:cardboard_sword"]),
+            create.deploying("minecraft:iron_ingot", ["minecraft:iron_ingot", "kubejs:ironboard_sword"]),
             create.deploying("minecraft:iron_ingot", ["minecraft:iron_ingot", "kubejs:ironboard_sword"]),//组装铁管作为枪管
             create.deploying("minecraft:iron_ingot", ["minecraft:iron_ingot", "#kubejs:stripped_wood"]),
             create.deploying("minecraft:iron_ingot", ["minecraft:iron_ingot", "#kubejs:stripped_wood"]),
