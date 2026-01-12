@@ -5,7 +5,7 @@ ServerEvents.recipes(event => {
         [
             " DM",
             " GB",
-            "GM "
+            "GB "
         ],
         {
             G: "kubejs:ironboard_sword",//铁管
