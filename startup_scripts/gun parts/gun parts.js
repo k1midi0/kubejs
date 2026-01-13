@@ -10,8 +10,9 @@ StartupEvents.registry('item', event => {
     //暂时弃用(历史枪械统一机匣零件)，改为每种历史枪械单独机匣零件，方便后续区分不同武器型号
 
     /*---------------- 手枪机匣类分割线 ----------------*/
-    event.create('M1911_receiver', 'basic')//柯尔特M1911手枪的机匣零件
+    event.create('m1911_receiver')//柯尔特M1911手枪的机匣零件
         .displayName('柯尔特M1911手枪的机匣零件')
+
 
     event.create('M1912_receiver', 'basic')//斯太尔M1912（8发半自动型）、斯太尔M1912/P16（16发全自动型）的机匣零件
         .displayName('斯太尔M1912手枪的机匣零件')
