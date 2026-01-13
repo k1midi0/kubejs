@@ -10,9 +10,8 @@ StartupEvents.registry('item', event => {
     //暂时弃用(历史枪械统一机匣零件)，改为每种历史枪械单独机匣零件，方便后续区分不同武器型号
 
     /*---------------- 手枪机匣类分割线 ----------------*/
-    event.create('m1911_receiver')//柯尔特M1911手枪的机匣零件
-        .displayName('柯尔特M1911手枪的机匣零件')
-
+    event.create('m1911_receiver', 'basic')//柯尔特M1911手枪的机匣零件
+        .displayName('柯尔特M1911机匣')
 
     event.create('m1912_receiver', 'basic')//斯太尔M1912（8发半自动型）、斯太尔M1912/P16（16发全自动型）的机匣零件
         .displayName('斯太尔M1912机匣')
@@ -92,7 +91,7 @@ StartupEvents.registry('item', event => {
     event.create('mu73_receiver', 'basic')         // MU73(MA) mod.1942半自动步枪的机匣零件
         .displayName('MU73(MA)机匣')
 
-    event.create('cbr11_935_receiver', 'basic')    // CBR11/935 mod.1920卡宾枪的机匣零件
+    event.create('cbr11_receiver', 'basic')    // CBR11/935 mod.1920卡宾枪的机匣零件
         .displayName('CBR11/935机匣')
 
     event.create('mua73_receiver', 'basic')        // MUA73(MA) mod.1944自动步枪的机匣零件
@@ -246,18 +245,48 @@ StartupEvents.registry('item', event => {
     event.create('rpg7_receiver', 'basic')//RPG-7火箭筒的发射筒零件
         .displayName('RPG-7发射筒')
 
+    /*---------------- 枪管类分割线 ----------------*/
+    event.create('short_barrel_45acp', 'basic')//.45口径短枪管（.45ACP）
+        .displayName('.45口径短枪管')
 
-    event.create('barrel_45acp', 'basic')//.45口径枪管
-        .displayName('.45口径枪管')
+        event.create('long_barrel_45acp', 'basic')//.45口径长枪管（45-70“政府”）
+        .displayName('.45口径长枪管')
 
-    event.create('barrel_9mm', 'basic')//9mm枪管
+    event.create('short_barrel_9mm', 'basic')//9mm短枪管（.357、9mm）
         .displayName('9mm口径枪管')
 
+    event.create('long_barrel_9mm', 'basic')//9mm长枪管（.357）
+        .displayName('.357口径长枪管')
+
+    event.create('short_barrel_7.62mm', 'basic')//7.62mm短枪管（7.62x25mm）
+        .displayName('7.62mm口径短枪管')
+
+    event.create('long_barrel_7.62mm', 'basic')//7.62mm长枪管（.30-06、.308温彻斯顿、7.62x39mm、7.62x54mm）
+        .displayName('7.62mm口径长枪管')
+
+    event.create('short_barrel_50acp', 'basic')//.50口径短枪管（.50AE)
+        .displayName('.50口径短枪管')
+
+    event.create('long_barrel_50acp', 'basic')//.50口径长枪管(.50AE、.50BMG)
+        .displayName('.50口径长枪管')
+
+    event.create('barrel_5.7mm', 'basic')//5.7mm枪管(5.7x28mm)
+        .displayName('5.7mm口径枪管')
 
 
+    event.create('barrel_5.8mm', 'basic')//5.8mm枪管(5.8x42mm)
+        .displayName('5.8mm口径枪管')
 
+    event.create('barrel_5.56mm', 'basic')//5.56mm枪管(5.56x45mm)
+        .displayName('5.56mm口径枪管')
 
+    event.create('barrel_7.5mm', 'basic')//7.5mm枪管(7.5x52mm)
+        .displayName('7.5mm口径枪管')
 
+    event.create('barrel_12ga.', 'basic')//12号口径枪管（12ga.）
+        .displayName('12号口径枪管')
+
+    /*---------------- 基础零件类分割线 ----------------*/
 
     event.create('iron_part_t')//T型铁零件
         .displayName('T型铁零件')
@@ -270,7 +299,6 @@ StartupEvents.registry('item', event => {
 
     event.create('iron_spring')//铁弹簧
         .displayName('铁弹簧')
-
     event.create('ironboard_sword', 'sword')//铁管
         .displayName('铁管')
         .maxStackSize(1)
