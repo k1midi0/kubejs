@@ -11,97 +11,98 @@ StartupEvents.registry('item', event => {
 
     /*---------------- 手枪机匣类分割线 ----------------*/
     event.create('M1911_receiver', 'basic')//柯尔特M1911手枪的机匣零件
-        .displayName('柯尔特M1911手枪的机匣零件')
+        .displayName('柯尔特M1911机匣')
 
     event.create('M1912_receiver', 'basic')//斯太尔M1912（8发半自动型）、斯太尔M1912/P16（16发全自动型）的机匣零件
-        .displayName('斯太尔M1912手枪的机匣零件')
+        .displayName('斯太尔M1912机匣')
+
     event.create('M1912_auto_receiver', 'basic')//斯太尔M1912/P16（16发全自动型）的机匣零件
-        .displayName('斯太尔M1912/P16全自动手枪的机匣零件')
+        .displayName('斯太尔M1912/P16机匣')
     //全自动型合成配方需要额外添加一个精密构件
 
     event.create('P320_receiver', 'basic')//P320手枪的机匣零件
-        .displayName('P320手枪的机匣零件')
+        .displayName('P320机匣')
 
     event.create('glock17_receiver', 'basic')//格洛克17手枪的机匣零件
-        .displayName('格洛克17手枪的机匣零件')
+        .displayName('格洛克17机匣')
 
     event.create('CZ75_receiver', 'basic')//CZ75自动手枪的机匣零件
-        .displayName('CZ75自动手枪的机匣零件')
+        .displayName('CZ75机匣')
     // 全自动，需要精密构件
 
     event.create('B93R_receiver', 'basic')//B93R冲锋手枪的机匣零件
-        .displayName('B93R冲锋手枪的机匣零件')
+        .displayName('B93R机匣')
     // 全自动，需要精密构件
 
     event.create('deagle_receiver', 'basic')//.50沙漠之鹰、.357黄金沙漠之鹰、永恒.50Z型的机匣零件
-        .displayName('沙漠之鹰手枪的机匣零件')
+        .displayName('沙漠之鹰机匣')
     //用钢枪身-.50口径、金枪身-.357口径、金枪身-.50口径来确定最终生产枪械
 
     /*---------------- 冲锋枪机匣类分割线 ----------------*/
     event.create('CSG19_receiver', 'basic')//CSG19冲锋枪的机匣零件
-        .displayName('CSG19冲锋枪的机匣零件')
+        .displayName('CSG19机匣')
     // 全自动，需要精密构件
 
     event.create('UZI_receiver', 'basic')//乌兹冲锋枪的机匣零件
-        .displayName('乌兹冲锋枪的机匣零件')
+        .displayName('乌兹机匣')
     // 全自动，需要精密构件
 
     event.create('MP5A5_receiver', 'basic')//MP5A5冲锋枪的机匣零件
-        .displayName('MP5A5冲锋枪的机匣零件')
+        .displayName('MP5A5机匣')
     // 全自动，需要精密构件
 
     event.create('UMP45_receiver', 'basic')//UMP45冲锋枪的机匣零件
-        .displayName('UMP45冲锋枪的机匣零件')
+        .displayName('UMP45机匣')
     // 全自动，需要精密构件
 
     event.create('Victor_receiver', 'basic')//维克托冲锋枪的机匣零件
-        .displayName('维克托冲锋枪的机匣零件')
+        .displayName('维克托机匣')
     // 全自动，需要精密构件
 
     event.create('P90_receiver', 'basic')//P90冲锋枪的机匣零件
-        .displayName('P90冲锋枪的机匣零件')
+        .displayName('P90机匣')
     // 全自动，需要精密构件
 
     /*---------------- 步枪机匣类分割线 ----------------*/
     event.create('M1860_receiver', 'basic')        // 亨利M1860的机匣零件
-        .displayName('亨利M1860的机匣零件')
+        .displayName('亨利M1860机匣')
 
     event.create('M1865_receiver', 'basic')      // 斯宾塞M1865/1871的机匣零件
-        .displayName('斯宾塞M1865/1871的机匣零件')
+        .displayName('斯宾塞M1865/1871机匣')
 
     event.create('CBR11_93_receiver', 'basic')     // CBR11/93 mod.1901栓动步枪的机匣零件
-        .displayName('CBR11/93 mod.1901栓动步枪的机匣零件')
+        .displayName('CBR11/93机匣')
 
     event.create('CBR9_receiver', 'basic')         // CBR9 mod.1875单发步枪的机匣零件
-        .displayName('CBR9 mod.1875单发步枪的机匣零件')
+        .displayName('CBR9机匣')
 
     event.create('hanyang88_receiver', 'basic')    // 汉阳造88式步枪的机匣零件
-        .displayName('汉阳造88式步枪的机匣零件')
+        .displayName('汉阳造88式机匣')
 
     event.create('M1903A3_receiver', 'basic')      // 斯普林菲尔德M1903A3的机匣零件
-        .displayName('斯普林菲尔德M1903A3的机匣零件')
+        .displayName('斯普林菲尔德M1903A3机匣')
 
     event.create('C11_receiver', 'basic')          // C11民用狩猎步枪的机匣零件
-        .displayName('C11民用狩猎步枪的机匣零件')
+        .displayName('C11机匣')
 
     event.create('MA90_receiver', 'basic')         // MA90(C)民用半自动步枪的机匣零件
-        .displayName('MA90(C)民用半自动步枪的机匣零件')
+        .displayName('MA90(C)机匣')
 
     event.create('MU73_receiver', 'basic')         // MU73(MA) mod.1942半自动步枪的机匣零件
-        .displayName('MU73(MA) mod.1942半自动步枪的机匣零件')
+        .displayName('MU73(MA)机匣')
 
     event.create('CBR11_receiver', 'basic')    // CBR11/935 mod.1920卡宾枪的机匣零件
-        .displayName('CBR11/935 mod.1920卡宾枪的机匣零件')
+        .displayName('CBR11/935机匣')
 
     event.create('MUA73_receiver', 'basic')        // MUA73(MA) mod.1944自动步枪的机匣零件
-        .displayName('MUA73(MA) mod.1944自动步枪的机匣零件')
+        .displayName('MUA73(MA)机匣')
     // 全自动，需要精密构件
 
     event.create('SKS_receiver', 'basic')          // SKS战术步枪的机匣零件
-        .displayName('SKS战术步枪的机匣零件')
+        .displayName('SKS机匣')
 
     event.create('FN_FAL_receiver', 'basic')       // FN FAL战斗步枪的机匣零件
-        .displayName('FN FAL战斗步枪的机匣零件')
+        .displayName('FN FAL机匣')
     // 全自动，需要精密构件
 
     event.create('G3_receiver', 'basic')           // G3战斗步枪的机匣零件
@@ -109,58 +110,58 @@ StartupEvents.registry('item', event => {
     // 全自动，需要精密构件
 
     event.create('M16A1_receiver', 'basic')        // M16A1制式步枪的机匣零件
-        .displayName('M16A1制式步枪的机匣零件')
+        .displayName('M16A1机匣')
     // 全自动，需要精密构件
 
     event.create('M16A4_receiver', 'basic')        // M16A4制式步枪的机匣零件
-        .displayName('M16A4制式步枪的机匣零件')
+        .displayName('M16A4机匣')
     // 全自动，需要精密构件
 
     event.create('AKM_receiver', 'basic')          // AKM突击步枪的机匣零件
-        .displayName('AKM突击步枪的机匣零件')
+        .displayName('AKM机匣')
     // 全自动，需要精密构件
 
     event.create('TYPE18_receiver', 'basic')       // 18-1式制式步枪的机匣零件
-        .displayName('18-1式制式步枪的机匣零件')
+        .displayName('18-1式机匣')
     // 全自动，需要精密构件
 
     event.create('QBZ95_receiver', 'basic')        // 95式“长弓”突击步枪的机匣零件
-        .displayName('95式“长弓”突击步枪的机匣零件')
+        .displayName('95式“长弓”机匣')
     // 全自动，需要精密构件
 
     event.create('AUG_receiver', 'basic')          // AUG突击步枪的机匣零件
-        .displayName('AUG突击步枪的机匣零件')
+        .displayName('AUG机匣')
     // 全自动，需要精密构件
 
     event.create('G36K_receiver', 'basic')         // G36K突击步枪的机匣零件
-        .displayName('G36K突击步枪的机匣零件')
+        .displayName('G36K机匣')
     // 全自动，需要精密构件
 
     event.create('HK416A5_receiver', 'basic')      // HK-416A5突击步枪的机匣零件
-        .displayName('HK-416A5突击步枪的机匣零件')
+        .displayName('HK-416A5机匣')
     // 全自动，需要精密构件
 
     event.create('M4A1_receiver', 'basic')         // M4A1卡宾枪的机匣零件
-        .displayName('M4A1卡宾枪的机匣零件')
+        .displayName('M4A1机匣')
     // 全自动，需要精密构件
 
     event.create('SCAR_L_receiver', 'basic')       // SCAR-L突击步枪的机匣零件
-        .displayName('SCAR-L突击步枪的机匣零件')
+        .displayName('SCAR-L机匣')
     // 全自动，需要精密构件
 
     event.create('SCAR_H_receiver', 'basic')       // SCAR-H战斗步枪的机匣零件
-        .displayName('SCAR-H战斗步枪的机匣零件')
+        .displayName('SCAR-H机匣')
     // 全自动，需要精密构件
 
     event.create('QBU191_receiver', 'basic')       // 191式突击步枪的机匣零件
-        .displayName('191式突击步枪的机匣零件')
+        .displayName('191式机匣')
     // 全自动，需要精密构件
 
     event.create('SPR_15_receiver', 'basic')        // SPR-15 HB“射手座”反狙击步枪的机匣零件
-        .displayName('SPR-15 HB“射手座”反狙击步枪的机匣零件')
+        .displayName('SPR-15 HB“射手座”机匣')
 
     event.create('MK14_receiver', 'basic')         // MK14 EBR精确射手步枪的机匣零件
-        .displayName('MK14 EBR精确射手步枪的机匣零件')
+        .displayName('MK14 EBR机匣')
     // 全自动，需要精密构件
 
 
