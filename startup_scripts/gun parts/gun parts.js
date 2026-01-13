@@ -159,11 +159,91 @@ StartupEvents.registry('item', event => {
 
     event.create('SPR_15_receiver', 'basic')        // SPR-15 HB“射手座”反狙击步枪的机匣零件
         .displayName('SPR-15 HB“射手座”机匣')
-
+    // 全自动，需要精密构件
+    
     event.create('MK14_receiver', 'basic')         // MK14 EBR精确射手步枪的机匣零件
         .displayName('MK14 EBR机匣')
     // 全自动，需要精密构件
 
+    /*---------------- 霰弹枪机匣类分割线 ----------------*/
+    event.create('CLF10_receiver', 'basic')//CLF10中折式霰弹枪的机匣零件
+        .displayName('CLF10机匣')
+
+    event.create('DB2_receiver', 'basic')//DB-2杜林人霰弹枪的机匣零件
+        .displayName('DB-2杜林人机匣')
+
+    event.create('DB4_receiver', 'basic')//DB-4乌萨斯霰弹枪的机匣零件
+        .displayName('DB-4乌萨斯机匣')
+
+    event.create('winchester1897_receiver', 'basic')//温切斯特M1897泵动霰弹枪的机匣零件
+        .displayName('温切斯特M1897机匣')
+
+    event.create('M870_receiver', 'basic')//M870霰弹枪的机匣零件
+        .displayName('M870机匣')
+
+    event.create('M1014_receiver', 'basic')//M1014战斗霰弹枪的机匣零件
+        .displayName('M1014机匣')
+
+    event.create('SPAS12_receiver', 'basic')//SPAS-12多功能霰弹枪的机匣零件
+        .displayName('SPAS-12机匣')
+
+    event.create('AA12_receiver', 'basic')//AA12霰弹枪的机匣零件
+        .displayName('AA12机匣')
+    // 全自动，需要精密构件
+
+    /*---------------- 狙击枪机匣类分割线 ----------------*/
+    event.create('springfield1873_receiver', 'basic')//春田1873活门步枪的机匣零件
+        .displayName('春田1873机匣')
+
+    event.create('CBR1125_receiver', 'basic')//CBR11/25 mod.1915狙击步枪的机匣零件
+        .displayName('CBR11/25机匣')
+
+    event.create('AT50_receiver', 'basic')//AT50 mod.1941反坦克枪的机匣零件
+        .displayName('AT50机匣')
+
+    event.create('M700_receiver', 'basic')//M700狙击步枪的机匣零件
+        .displayName('M700机匣')
+
+    event.create('AWM_receiver', 'basic')//精密国际AWM狙击步枪的机匣零件
+        .displayName('AWM机匣')
+
+    event.create('M95_receiver', 'basic')//M95 .50口径反器材步枪的机匣零件
+        .displayName('M95机匣')
+
+    event.create('M107_receiver', 'basic')//M107 .50口径反器材步枪的机匣零件
+        .displayName('M107机匣')
+
+    /*---------------- 机枪机匣类分割线 ----------------*/
+    event.create('LMG31_receiver', 'basic')//LMG31 mod.1940/1955班用机枪的机匣零件
+        .displayName('LMG31机匣')
+    // 全自动，需要精密构件
+
+    event.create('RMG_receiver', 'basic')//RMG mod.1970通用机枪的机匣零件
+        .displayName('RMG机匣')
+    // 全自动，需要精密构件
+
+    event.create('RPK_receiver', 'basic')//RPK轻机枪的机匣零件
+        .displayName('RPK机匣')
+    // 全自动，需要精密构件
+
+    event.create('M249_receiver', 'basic')//M249机枪的机匣零件
+        .displayName('M249机匣')
+    // 全自动，需要精密构件
+
+    event.create('EVOLYS_receiver', 'basic')//FN EVOLYS机枪的机匣零件
+        .displayName('FN EVOLYS机匣')
+    // 全自动，需要精密构件
+
+    event.create('M134_receiver', 'basic')//M134转管机枪的机匣零件
+        .displayName('M134机匣')
+    // 全自动，需要精密构件
+
+    /*---------------- 重型武器机匣类分割线 ----------------*/
+    event.create('M320_receiver', 'basic')//M320榴弹发射器的机匣零件
+        .displayName('M320机匣')
+
+    event.create('RPG7_receiver', 'basic')//RPG-7火箭筒的发射筒零件
+        .displayName('RPG-7发射筒')
 
 
     event.create('barrel_45acp', 'basic')//.45口径枪管
@@ -178,7 +258,7 @@ StartupEvents.registry('item', event => {
 
 
 
-    event.create('metal_part_t')//金属零件
+    event.create('metal_part_t')//T型金属零件
         .displayName('T型金属零件')
 
     event.create('ironboard_sword', 'sword')//铁管
