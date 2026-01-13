@@ -327,6 +327,7 @@ StartupEvents.registry('item', event => {
 
     event.create('stock_alloy_heavy')//安山合金重型聚合物枪托
         .displayName('安山合金重型枪托')
+
     /*---------------- 护木类分割线 ----------------*/
     //安山合金可能替换为专门的聚合物材料
     event.create('foregrip_wood_light')//剥皮木轻型护木
@@ -340,6 +341,7 @@ StartupEvents.registry('item', event => {
 
     event.create('foregrip_alloy_heavy')//安山合金重型聚合物护木
         .displayName('安山合金重型护木')
+
     /*---------------- 机械瞄具类分割线 ----------------*/
     //铁粒可能替换为专门的轻金属材料
     event.create('iron_sight_light')//铁粒轻型机械瞄具
@@ -349,7 +351,6 @@ StartupEvents.registry('item', event => {
         .displayName('铁粒重型机械瞄具')
 
     /*---------------- 基础零件类分割线 ----------------*/
-
     event.create('iron_part_t')//T型铁零件
         .displayName('T型铁零件')
 
