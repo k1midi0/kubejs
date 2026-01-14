@@ -7,15 +7,45 @@
 //无机械瞄具，一个铁粒的轻型机械瞄具，两个铁粒的重型机械瞄具
 //全自动武器需要至少一个精密构件
 
-//剥皮木//木片//木棍
-//T型铁零件//L型铁零件//连杆铁零件//铁弹簧//铁杆//铁管//小铁片
-//精密构件//安山合金
-//铜板//铜锭//铜粒
-//铁板//充电铁板//铁锭//充电铁锭//铁粒
-//锌锭//锌粒
-//黄铜板//黄铜锭//黄铜粒
-//金板//充电金板//金锭//充电金锭//金粒
-//钻石//充电钻石
+//安山合金'create:andesite_alloy'
+//铜板'create:copper_sheet'
+//铜锭'minecraft:copper_ingot'
+//铜粒'create:copper_nugget'
+//铁板'create:iron_sheet'
+//充电铁板'create_new_age:overcharged_iron_sheet'
+//铁锭'minecraft:iron_ingot'
+//充电铁锭'create_new_age:overcharged_iron'
+//铁粒'minecraft:iron_nugget'
+//锌锭'create:zinc_ingot'
+//锌粒'create:zinc_nugget'
+//黄铜板'create:brass_sheet'
+//黄铜锭'create:brass_ingot'
+//黄铜粒'create:brass_nugget'
+//金板'create:golden_sheet'
+//充电金板'create_new_age:overcharged_gold'
+//金锭//充电金锭'create_new_age:overcharged_gold'
+//金粒'minecraft:gold_nugget'
+//钻石'minecraft:diamond'
+//充电钻石'create_new_age:overcharged_diamond'
+//下界合金碎片'minecraft:netherite_scrap'
+//下界合金锭'minecraft:netherite_ingot'
+//剥皮木'kubejs:stripped_wood'
+//木棍'minecraft:stick'
+//燧石'minecraft:flint'
+//皮革'minecraft:leather'
+
+//木片'kubejs:wood_chip'
+//避雷针'minecraft:lightning_rod'
+//T型铁零件'kubejs:iron_part_t'
+//L型铁零件'kubejs:iron_part_l'
+//连杆铁零件'kubejs:iron_part_link'
+//铁弹簧'kubejs:iron_spring'
+//铁杆'kubejs:iron_rod'
+//铁管'kubejs:iron_board_sword'
+//小铁片'kubejs:iron_sheet_small'
+//精密构件'create:precision_mechanism'
+
+
 ServerEvents.recipes(event => {
     const create = event.recipes.create//创建一个快捷方式来使用Create的配方方法
 
@@ -30,15 +60,14 @@ ServerEvents.recipes(event => {
         'L    ',
         'GNZCC',
         ' M   ',
-        'C    ',
-        '     '
+        'C    '
     ], {
         L: 'kubejs:iron_part_l',//L型铁零件
         C: 'kubejs:iron_sheet_small',//小铁片
         G: 'kubejs:iron_part_link',//连杆铁零件
         N: 'kubejs:iron_spring',//铁弹簧
         Z: 'minecraft:lightning_rod',//避雷针
-        M: 'minecraft:stick'//木片（木棍占位）
+        M: 'kubejs:wood_chip'//木片（木棍占位）
     })
 
 

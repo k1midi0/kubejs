@@ -351,6 +351,9 @@ StartupEvents.registry('item', event => {
         .displayName('铁粒重型机械瞄具')
 
     /*---------------- 基础零件类分割线 ----------------*/
+    event.create('wood_chip')//木片
+        .displayName('木片')
+
     event.create('iron_part_t')//T型铁零件
         .displayName('T型铁零件')
 
