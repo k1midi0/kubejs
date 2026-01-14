@@ -1181,16 +1181,18 @@
 			"translation": [0, 4, 0]
 		},
 		"firstperson_righthand": {
-			"rotation": [0, 90, 0],
-			"translation": [0, 4, 0]
+			"translation": [0, 4.75, 0]
 		},
 		"firstperson_lefthand": {
-			"rotation": [0, 90, 0],
-			"translation": [0, 4, 0]
+			"translation": [0, 4.75, 0]
+		},
+		"ground": {
+			"translation": [0, 4.25, 0]
 		},
 		"gui": {
 			"rotation": [0, 90, 0],
-			"translation": [0, 4, 0]
+			"translation": [0, 6, 0],
+			"scale": [1.5, 1.5, 1.5]
 		},
 		"fixed": {
 			"rotation": [0, -90, 0],
@@ -1305,27 +1307,27 @@
 							"origin": [8.00404, 3.78678, 8.02154],
 							"color": 8,
 							"children": [81, 82, 83, 84, 85]
-						},
-						{
-							"name": "grip",
-							"origin": [8, 1.64788, 9.13013],
-							"color": 6,
-							"children": [
-								86,
-								87,
-								88,
-								89,
-								90,
-								91,
-								{
-									"name": "group",
-									"origin": [7.55449, -2.0291, 11.09047],
-									"color": 7,
-									"children": [92, 93, 94]
-								}
-							]
 						}
 					]
+				}
+			]
+		},
+		{
+			"name": "grip",
+			"origin": [8, 1.64788, 9.13013],
+			"color": 6,
+			"children": [
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				{
+					"name": "group",
+					"origin": [7.55449, -2.0291, 11.09047],
+					"color": 7,
+					"children": [92, 93, 94]
 				}
 			]
 		}
