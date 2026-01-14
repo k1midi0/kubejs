@@ -362,6 +362,7 @@ StartupEvents.registry('item', event => {
 
     event.create('iron_spring')//铁弹簧
         .displayName('铁弹簧')
+        
     event.create('ironboard_sword', 'sword')//铁管
         .displayName('铁管')
         .maxStackSize(1)
