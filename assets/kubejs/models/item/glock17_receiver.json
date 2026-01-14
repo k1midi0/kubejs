@@ -1646,6 +1646,38 @@
 			}
 		}
 	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, 90, 0],
+			"translation": [0, 4, 0]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, 0],
+			"translation": [0, 4, 0]
+		},
+		"firstperson_righthand": {
+			"translation": [0, 4.75, 0]
+		},
+		"firstperson_lefthand": {
+			"translation": [0, 4.75, 0]
+		},
+		"ground": {
+			"translation": [0, 4.25, 0]
+		},
+		"gui": {
+			"rotation": [0, 90, 0],
+			"translation": [0, 6, 0],
+			"scale": [1.5, 1.5, 1.5]
+		},
+		"fixed": {
+			"rotation": [0, -90, 0],
+			"translation": [0, 4.25, 0]
+		},
+		"on_shelf": {
+			"rotation": [0, 90, 0],
+			"translation": [0, 4, 0]
+		}
+	},
 	"groups": [
 		{
 			"name": "root",
