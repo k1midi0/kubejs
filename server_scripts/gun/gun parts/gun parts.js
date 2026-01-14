@@ -33,9 +33,9 @@ ServerEvents.recipes(event => {
         'C    ',
         '     '
     ], {
-        L: 'kubejs:l_iron_part',//L型铁零件
+        L: 'kubejs:iron_part_l',//L型铁零件
         C: 'kubejs:iron_sheet_small',//小铁片
-        G: 'kubejs:connecting_iron_part',//连杆铁零件
+        G: 'kubejs:iron_part_link',//连杆铁零件
         N: 'kubejs:iron_spring',//铁弹簧
         Z: 'minecraft:lightning_rod',//避雷针
         M: 'minecraft:stick'//木片（木棍占位）
