@@ -249,7 +249,7 @@ StartupEvents.registry('item', event => {
     event.create('short_barrel_45acp', 'basic')//.45口径短枪管（.45ACP）
         .displayName('.45口径短枪管')
 
-        event.create('long_barrel_45acp', 'basic')//.45口径长枪管（45-70“政府”）
+    event.create('long_barrel_45acp', 'basic')//.45口径长枪管（45-70“政府”）
         .displayName('.45口径长枪管')
 
     event.create('short_barrel_9mm', 'basic')//9mm短枪管（.357、9mm）
@@ -286,8 +286,71 @@ StartupEvents.registry('item', event => {
     event.create('barrel_12ga.', 'basic')//12号口径枪管（12ga.）
         .displayName('12号口径枪管')
 
-    /*---------------- 基础零件类分割线 ----------------*/
+    /*---------------- 弹匣类分割线 ----------------*/
+    event.create('mag_45acp', 'basic')//.45ACP弹匣
+        .displayName('.45ACP弹匣')
 
+    event.create('mag_9mm', 'basic')//9mm弹匣
+        .displayName('9mm弹匣')
+
+    event.create('mag_7.62mm', 'basic')//7.62mm弹匣
+        .displayName('7.62mm弹匣')
+
+    event.create('mag_50acp', 'basic')//.50ACP弹匣
+        .displayName('.50ACP弹匣')
+
+    event.create('mag_5.7mm', 'basic')//5.7mm弹匣
+        .displayName('5.7mm弹匣')
+
+    event.create('mag_5.8mm', 'basic')//5.8mm弹匣   
+        .displayName('5.8mm弹匣')
+
+    event.create('mag_5.56mm', 'basic')//5.56mm弹匣
+        .displayName('5.56mm弹匣')
+
+    event.create('mag_7.5mm', 'basic')//7.5mm弹匣
+        .displayName('7.5mm弹匣')
+
+    event.create('mag_12ga.', 'basic')//12ga.弹匣
+        .displayName('12ga.弹匣')
+
+    /*---------------- 枪托类分割线 ----------------*/
+    //安山合金可能替换为专门的聚合物材料
+    event.create('stock_wood_light')//剥皮木轻型枪托
+        .displayName('剥皮木轻型枪托')
+
+    event.create('stock_wood_heavy')//剥皮木重型枪托
+        .displayName('剥皮木重型枪托')
+
+    event.create('stock_alloy_light')//安山合金轻型聚合物枪托
+        .displayName('安山合金轻型枪托')
+
+    event.create('stock_alloy_heavy')//安山合金重型聚合物枪托
+        .displayName('安山合金重型枪托')
+
+    /*---------------- 护木类分割线 ----------------*/
+    //安山合金可能替换为专门的聚合物材料
+    event.create('foregrip_wood_light')//剥皮木轻型护木
+        .displayName('剥皮木轻型护木')
+
+    event.create('foregrip_wood_heavy')//剥皮木重型护木
+        .displayName('剥皮木重型护木')
+
+    event.create('foregrip_alloy_light')//安山合金轻型聚合物护木
+        .displayName('安山合金轻型护木')
+
+    event.create('foregrip_alloy_heavy')//安山合金重型聚合物护木
+        .displayName('安山合金重型护木')
+
+    /*---------------- 机械瞄具类分割线 ----------------*/
+    //铁粒可能替换为专门的轻金属材料
+    event.create('iron_sight_light')//铁粒轻型机械瞄具
+        .displayName('铁粒轻型机械瞄具')
+
+    event.create('iron_sight_heavy')//铁粒重型机械瞄具
+        .displayName('铁粒重型机械瞄具')
+
+    /*---------------- 基础零件类分割线 ----------------*/
     event.create('iron_part_t')//T型铁零件
         .displayName('T型铁零件')
 
