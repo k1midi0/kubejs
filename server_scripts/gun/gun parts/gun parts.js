@@ -56,7 +56,7 @@ ServerEvents.recipes(event => {
 
 
 
-    create.mechanical_crafting('kubejs:m1911_receiver', [
+    create.mechanical_crafting('geckojs:m1911_receiver', [
         'L    ',
         'GNZCC',
         ' M   ',
