@@ -82,235 +82,137 @@ StartupEvents.registry('item', event => {
         .displayName('亨利M1860机匣')
 
     event.create('geckojs:m1865_receiver', 'animatable')      // 斯宾塞M1865/1871的机匣零件
-        // .defaultGeoModel()//使用标准路径geckojs模型
-        .geoModel(geo => {//占位符模型
-            geo.setSimpleModel('geckojs:geo/item/m1911_receiver.geo.json');
-            geo.setSimpleTexture('geckojs:textures/item/m1911_receiver.png');
-        })
+        .defaultGeoModel()//使用标准路径geckojs模型
         .displayName('斯宾塞M1865/1871机匣')
 
-    event.create('geckojs:cbr11_93_receiver', 'animatable')     // CBR11/93 mod.1901栓动步枪的机匣零件
-        // .defaultGeoModel()//使用标准路径geckojs模型
-        .geoModel(geo => {//占位符模型
-            geo.setSimpleModel('geckojs:geo/item/m1911_receiver.geo.json');
-            geo.setSimpleTexture('geckojs:textures/item/m1911_receiver.png');
-        })
-        .displayName('CBR11/93机匣')
+    event.create('geckojs:cbr11_receiver', 'animatable')     // CBR11系列栓动步枪的机匣零件
+        .defaultGeoModel()//使用标准路径geckojs模型
+        .displayName('CBR11机匣')
 
     event.create('geckojs:cbr9_receiver', 'animatable')         // CBR9 mod.1875单发步枪的机匣零件
-        // .defaultGeoModel()//使用标准路径geckojs模型
-        .geoModel(geo => {//占位符模型
-            geo.setSimpleModel('geckojs:geo/item/m1911_receiver.geo.json');
-            geo.setSimpleTexture('geckojs:textures/item/m1911_receiver.png');
-        })
+        .defaultGeoModel()//使用标准路径geckojs模型
         .displayName('CBR9机匣')
 
     event.create('geckojs:hanyang88_receiver', 'animatable')    // 汉阳造88式步枪的机匣零件
-        // .defaultGeoModel()//使用标准路径geckojs模型
-        .geoModel(geo => {//占位符模型
-            geo.setSimpleModel('geckojs:geo/item/m1911_receiver.geo.json');
-            geo.setSimpleTexture('geckojs:textures/item/m1911_receiver.png');
-        })
+        .defaultGeoModel()//使用标准路径geckojs模型
         .displayName('汉阳造88式机匣')
 
     event.create('geckojs:m1903a3_receiver', 'animatable')      // 斯普林菲尔德M1903A3的机匣零件
-        // .defaultGeoModel()//使用标准路径geckojs模型
-        .geoModel(geo => {//占位符模型
-            geo.setSimpleModel('geckojs:geo/item/m1911_receiver.geo.json');
-            geo.setSimpleTexture('geckojs:textures/item/m1911_receiver.png');
-        })
+        .defaultGeoModel()//使用标准路径geckojs模型
         .displayName('斯普林菲尔德M1903A3机匣')
 
     event.create('geckojs:c11_receiver', 'animatable')          // C11民用狩猎步枪的机匣零件
-        // .defaultGeoModel()//使用标准路径geckojs模型
-        .geoModel(geo => {//占位符模型
-            geo.setSimpleModel('geckojs:geo/item/m1911_receiver.geo.json');
-            geo.setSimpleTexture('geckojs:textures/item/m1911_receiver.png');
-        })
+        .defaultGeoModel()//使用标准路径geckojs模型
         .displayName('C11机匣')
 
-    event.create('geckojs:ma90_receiver', 'animatable')         // MA90(C)民用半自动步枪的机匣零件
-        // .defaultGeoModel()//使用标准路径geckojs模型
-        .geoModel(geo => {//占位符模型
-            geo.setSimpleModel('geckojs:geo/item/m1911_receiver.geo.json');
-            geo.setSimpleTexture('geckojs:textures/item/m1911_receiver.png');
-        })
-        .displayName('MA90(C)机匣')
+    event.create('geckojs:ma_receiver', 'animatable')         // MA系列的机匣零件
+        .defaultGeoModel()//使用标准路径geckojs模型
+        .displayName('MA机匣')
 
-    event.create('geckojs:mu73_receiver', 'animatable')         // MU73(MA) mod.1942半自动步枪的机匣零件
-        // .defaultGeoModel()//使用标准路径geckojs模型
-        .geoModel(geo => {//占位符模型
-            geo.setSimpleModel('geckojs:geo/item/m1911_receiver.geo.json');
-            geo.setSimpleTexture('geckojs:textures/item/m1911_receiver.png');
-        })
-        .displayName('MU73(MA)机匣')
+    // event.create('geckojs:mu73_receiver', 'animatable')         // MU73(MA) mod.1942半自动步枪的机匣零件
+    //     // .defaultGeoModel()//使用标准路径geckojs模型
+    //     .geoModel(geo => {//占位符模型
+    //         geo.setSimpleModel('geckojs:geo/item/m1911_receiver.geo.json');
+    //         geo.setSimpleTexture('geckojs:textures/item/m1911_receiver.png');
+    //     })
+    //     .displayName('MU73(MA)机匣')
 
-    event.create('geckojs:cbr11_receiver', 'animatable')    // CBR11/935 mod.1920卡宾枪的机匣零件
-        // .defaultGeoModel()//使用标准路径geckojs模型
-        .geoModel(geo => {//占位符模型
-            geo.setSimpleModel('geckojs:geo/item/m1911_receiver.geo.json');
-            geo.setSimpleTexture('geckojs:textures/item/m1911_receiver.png');
-        })
-        .displayName('CBR11/935机匣')
+    // event.create('geckojs:cbr11_receiver', 'animatable')    // CBR11/935 mod.1920卡宾枪的机匣零件
+    //     // .defaultGeoModel()//使用标准路径geckojs模型
+    //     .geoModel(geo => {//占位符模型
+    //         geo.setSimpleModel('geckojs:geo/item/m1911_receiver.geo.json');
+    //         geo.setSimpleTexture('geckojs:textures/item/m1911_receiver.png');
+    //     })
+    //     .displayName('CBR11/935机匣')//cbr11系共用机匣
 
-    event.create('geckojs:mua73_receiver', 'animatable')        // MUA73(MA) mod.1944自动步枪的机匣零件
+    event.create('geckojs:ma_auto_receiver', 'animatable')        // MUA73(MA) mod.1944自动步枪的机匣零件
         // .defaultGeoModel()//使用标准路径geckojs模型
-        .geoModel(geo => {//占位符模型
-            geo.setSimpleModel('geckojs:geo/item/m1911_receiver.geo.json');
-            geo.setSimpleTexture('geckojs:textures/item/m1911_receiver.png');
+        .geoModel(geo => {//共用ma机匣模型
+            geo.setSimpleModel('geckojs:geo/item/ma_receiver.geo.json');
+            geo.setSimpleTexture('geckojs:textures/item/ma_receiver.png');
         })
-        .displayName('MUA73(MA)机匣')
+        .displayName('MA自动机匣')
     // 全自动，需要精密构件
 
     event.create('geckojs:sks_receiver', 'animatable')          // SKS战术步枪的机匣零件
-        // .defaultGeoModel()//使用标准路径geckojs模型
-        .geoModel(geo => {//占位符模型
-            geo.setSimpleModel('geckojs:geo/item/m1911_receiver.geo.json');
-            geo.setSimpleTexture('geckojs:textures/item/m1911_receiver.png');
-        })
+        .defaultGeoModel()//使用标准路径geckojs模型
         .displayName('SKS机匣')
 
     event.create('geckojs:fn_fal_receiver', 'animatable')       // FN FAL战斗步枪的机匣零件
-        // .defaultGeoModel()//使用标准路径geckojs模型
-        .geoModel(geo => {//占位符模型
-            geo.setSimpleModel('geckojs:geo/item/m1911_receiver.geo.json');
-            geo.setSimpleTexture('geckojs:textures/item/m1911_receiver.png');
-        })
-        .displayName('FN FAL机匣')
+        .defaultGeoModel()//使用标准路径geckojs模型        .displayName('FN FAL机匣')
     // 全自动，需要精密构件
 
     event.create('geckojs:g3_receiver', 'animatable')           // G3战斗步枪的机匣零件
-        // .defaultGeoModel()//使用标准路径geckojs模型
-        .geoModel(geo => {//占位符模型
-            geo.setSimpleModel('geckojs:geo/item/m1911_receiver.geo.json');
-            geo.setSimpleTexture('geckojs:textures/item/m1911_receiver.png');
-        })
+        .defaultGeoModel()//使用标准路径geckojs模型
         .displayName('G3战斗步枪的机匣零件')
     // 全自动，需要精密构件
 
     event.create('geckojs:m16a1_receiver', 'animatable')        // M16A1制式步枪的机匣零件
-        // .defaultGeoModel()//使用标准路径geckojs模型
-        .geoModel(geo => {//占位符模型
-            geo.setSimpleModel('geckojs:geo/item/m1911_receiver.geo.json');
-            geo.setSimpleTexture('geckojs:textures/item/m1911_receiver.png');
-        })
+        .defaultGeoModel()//使用标准路径geckojs模型
         .displayName('M16A1机匣')
     // 全自动，需要精密构件
 
     event.create('geckojs:m16a4_receiver', 'animatable')        // M16A4制式步枪的机匣零件
-        // .defaultGeoModel()//使用标准路径geckojs模型
-        .geoModel(geo => {//占位符模型
-            geo.setSimpleModel('geckojs:geo/item/m1911_receiver.geo.json');
-            geo.setSimpleTexture('geckojs:textures/item/m1911_receiver.png');
-        })
+        .defaultGeoModel()//使用标准路径geckojs模型
         .displayName('M16A4机匣')
     // 全自动，需要精密构件
 
     event.create('geckojs:akm_receiver', 'animatable')          // AKM突击步枪的机匣零件
-        // .defaultGeoModel()//使用标准路径geckojs模型
-        .geoModel(geo => {//占位符模型
-            geo.setSimpleModel('geckojs:geo/item/m1911_receiver.geo.json');
-            geo.setSimpleTexture('geckojs:textures/item/m1911_receiver.png');
-        })
+        .defaultGeoModel()//使用标准路径geckojs模型
         .displayName('AKM机匣')
     // 全自动，需要精密构件
 
     event.create('geckojs:type18_receiver', 'animatable')       // 18-1式制式步枪的机匣零件
-        // .defaultGeoModel()//使用标准路径geckojs模型
-        .geoModel(geo => {//占位符模型
-            geo.setSimpleModel('geckojs:geo/item/m1911_receiver.geo.json');
-            geo.setSimpleTexture('geckojs:textures/item/m1911_receiver.png');
-        })
+        .defaultGeoModel()//使用标准路径geckojs模型
         .displayName('18-1式机匣')
     // 全自动，需要精密构件
 
     event.create('geckojs:qbz95_receiver', 'animatable')        // 95式“长弓”突击步枪的机匣零件
-        // .defaultGeoModel()//使用标准路径geckojs模型
-        .geoModel(geo => {//占位符模型
-            geo.setSimpleModel('geckojs:geo/item/m1911_receiver.geo.json');
-            geo.setSimpleTexture('geckojs:textures/item/m1911_receiver.png');
-        })
+        .defaultGeoModel()//使用标准路径geckojs模型
         .displayName('95式“长弓”机匣')
     // 全自动，需要精密构件
 
     event.create('geckojs:aug_receiver', 'animatable')          // AUG突击步枪的机匣零件
-        // .defaultGeoModel()//使用标准路径geckojs模型
-        .geoModel(geo => {//占位符模型
-            geo.setSimpleModel('geckojs:geo/item/m1911_receiver.geo.json');
-            geo.setSimpleTexture('geckojs:textures/item/m1911_receiver.png');
-        })
+        .defaultGeoModel()//使用标准路径geckojs模型
         .displayName('AUG机匣')
     // 全自动，需要精密构件
 
     event.create('geckojs:g36k_receiver', 'animatable')         // G36K突击步枪的机匣零件
-        // .defaultGeoModel()//使用标准路径geckojs模型
-        .geoModel(geo => {//占位符模型
-            geo.setSimpleModel('geckojs:geo/item/m1911_receiver.geo.json');
-            geo.setSimpleTexture('geckojs:textures/item/m1911_receiver.png');
-        })
+        .defaultGeoModel()//使用标准路径geckojs模型
         .displayName('G36K机匣')
     // 全自动，需要精密构件
 
     event.create('geckojs:hk416a5_receiver', 'animatable')      // HK-416A5突击步枪的机匣零件
-        // .defaultGeoModel()//使用标准路径geckojs模型
-        .geoModel(geo => {//占位符模型
-            geo.setSimpleModel('geckojs:geo/item/m1911_receiver.geo.json');
-            geo.setSimpleTexture('geckojs:textures/item/m1911_receiver.png');
-        })
+        .defaultGeoModel()//使用标准路径geckojs模型
         .displayName('HK-416A5机匣')
     // 全自动，需要精密构件
 
     event.create('geckojs:m4a1_receiver', 'animatable')         // M4A1卡宾枪的机匣零件
-        // .defaultGeoModel()//使用标准路径geckojs模型
-        .geoModel(geo => {//占位符模型
-            geo.setSimpleModel('geckojs:geo/item/m1911_receiver.geo.json');
-            geo.setSimpleTexture('geckojs:textures/item/m1911_receiver.png');
-        })
+        .defaultGeoModel()//使用标准路径geckojs模型
         .displayName('M4A1机匣')
     // 全自动，需要精密构件
 
     event.create('geckojs:scar_l_receiver', 'animatable')       // SCAR-L突击步枪的机匣零件
-        // .defaultGeoModel()//使用标准路径geckojs模型
-        .geoModel(geo => {//占位符模型
-            geo.setSimpleModel('geckojs:geo/item/m1911_receiver.geo.json');
-            geo.setSimpleTexture('geckojs:textures/item/m1911_receiver.png');
-        })
+        .defaultGeoModel()//使用标准路径geckojs模型
         .displayName('SCAR-L机匣')
     // 全自动，需要精密构件
 
     event.create('geckojs:scar_h_receiver', 'animatable')       // SCAR-H战斗步枪的机匣零件
-        // .defaultGeoModel()//使用标准路径geckojs模型
-        .geoModel(geo => {//占位符模型
-            geo.setSimpleModel('geckojs:geo/item/m1911_receiver.geo.json');
-            geo.setSimpleTexture('geckojs:textures/item/m1911_receiver.png');
-        })
-        .displayName('SCAR-H机匣')
+        .defaultGeoModel()//使用标准路径geckojs模型        .displayName('SCAR-H机匣')
     // 全自动，需要精密构件
 
     event.create('geckojs:qbu191_receiver', 'animatable')       // 191式突击步枪的机匣零件
-        // .defaultGeoModel()//使用标准路径geckojs模型
-        .geoModel(geo => {//占位符模型
-            geo.setSimpleModel('geckojs:geo/item/m1911_receiver.geo.json');
-            geo.setSimpleTexture('geckojs:textures/item/m1911_receiver.png');
-        })
+        .defaultGeoModel()//使用标准路径geckojs模型
         .displayName('191式机匣')
     // 全自动，需要精密构件
 
     event.create('geckojs:spr_15_receiver', 'animatable')        // SPR-15 HB“射手座”反狙击步枪的机匣零件
-        // .defaultGeoModel()//使用标准路径geckojs模型
-        .geoModel(geo => {//占位符模型
-            geo.setSimpleModel('geckojs:geo/item/m1911_receiver.geo.json');
-            geo.setSimpleTexture('geckojs:textures/item/m1911_receiver.png');
-        })
+        .defaultGeoModel()//使用标准路径geckojs模型
         .displayName('SPR-15 HB“射手座”机匣')
     // 全自动，需要精密构件
 
     event.create('geckojs:mk14_receiver', 'animatable')         // MK14 EBR精确射手步枪的机匣零件
-        // .defaultGeoModel()//使用标准路径geckojs模型
-        .geoModel(geo => {//占位符模型
-            geo.setSimpleModel('geckojs:geo/item/m1911_receiver.geo.json');
-            geo.setSimpleTexture('geckojs:textures/item/m1911_receiver.png');
-        })
+        .defaultGeoModel()//使用标准路径geckojs模型
         .displayName('MK14 EBR机匣')
     // 全自动，需要精密构件
 
