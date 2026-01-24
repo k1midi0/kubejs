@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
 
 
     vi.curving(
-        'kubejs:rough_casing',  // 输出物品
+        'kubejs:iron_part_u',  // 输出物品
         'minecraft:iron_ingot'  // 输入物品
     ).mode(4)   // 头物品: V形弯曲机头
         .headDamage(50);    // 每处理一次扣 50 耐久
@@ -67,19 +67,7 @@ ServerEvents.recipes(event => {
 
 
 
-    create.mechanical_crafting('geckojs:m1911_receiver', [
-        'L    ',
-        'GNZCC',
-        ' M   ',
-        'C    '
-    ], {
-        L: 'kubejs:iron_part_l',//L型铁零件
-        C: 'kubejs:iron_sheet_small',//小铁片
-        G: 'kubejs:iron_part_link',//连杆铁零件
-        N: 'kubejs:iron_spring',//铁弹簧
-        Z: 'minecraft:lightning_rod',//避雷针
-        M: 'kubejs:wood_chip'//木片（木棍占位）
-    })
+
 
 
 })
