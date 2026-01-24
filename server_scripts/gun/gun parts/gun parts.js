@@ -47,15 +47,23 @@
 
 
 ServerEvents.recipes(event => {
-    const create = event.recipes.create//创建一个快捷方式来使用Create的配方方法
-    const vintageimprovements = event.recipes.vintageimprovements//创建一个快捷方式来使用vintageimprovements方法
-
+    const create = event.recipes.create//创建一个快捷方式来使用机械动力（Create）的配方方法
+    const vi = event.recipes.vintageimprovements//创建一个快捷方式来使用经典改进(vintageimprovements）的配方方法
     create.cutting(//铁板切出小铁板
         Item.of("kubejs:iron_sheet_small", 2),
         "create:iron_sheet"
     )
 
-    vintageimprovements.curving("kubejs:iron_rod","minecraft:iron_ingot").mode(3)
+    vi.curving("kubejs:iron_rod","minecraft:iron_ingot").mode(3)
+
+
+    vi.curving(
+        'kubejs:rough_casing',  // 输出物品
+        'minecraft:iron_ingot' // 输入物品
+    ).head('vintageimprovements:v_shaped_curving_head')   // 头物品: V形弯曲机头
+        .headDamage(50);                     // 每处理一次扣 50 耐久
+
+
 
 
 
