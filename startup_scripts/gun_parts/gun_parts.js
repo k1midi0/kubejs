@@ -652,9 +652,11 @@ StartupEvents.registry('item', event => {
     event.create('iron_part_link')//连杆铁零件
 
         .displayName('连杆铁零件')
+
+    event.create('iron_rod')//铁杆
+        .displayName('铁杆')
         
     event.create('ironboard_sword', 'sword')//铁管
-
         .displayName('铁管')
         .maxStackSize(1)
         .tier('iron')                 // 使用铁制工具属性（耐久 250，挖掘速度等）

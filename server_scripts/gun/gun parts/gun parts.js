@@ -48,11 +48,14 @@
 
 ServerEvents.recipes(event => {
     const create = event.recipes.create//创建一个快捷方式来使用Create的配方方法
+    const vintageimprovements = event.recipes.vintageimprovements//创建一个快捷方式来使用vintageimprovements方法
 
     create.cutting(//铁板切出小铁板
         Item.of("kubejs:iron_sheet_small", 2),
         "create:iron_sheet"
     )
+
+    vintageimprovements.curving("kubejs:iron_rod","minecraft:iron_ingot").mode(3)
 
 
 
