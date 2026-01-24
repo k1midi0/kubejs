@@ -647,6 +647,9 @@ StartupEvents.registry('item', event => {
 
     event.create('rough_casing')//机匣粗胚
         .displayName('机匣粗胚')
+        
+    event.create('iron_part_u')//U型铁零件
+        .displayName('U型铁零件')
 
     event.create('trigger')//扳机
         .displayName('扳机')
