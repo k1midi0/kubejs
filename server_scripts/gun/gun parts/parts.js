@@ -53,15 +53,46 @@ ServerEvents.recipes(event => {
         Item.of("kubejs:iron_sheet_small", 2),
         "create:iron_sheet"
     )
+//========================重写金属杆配方===========================//
+    event.remove("vintageimprovements:andesite_rod")
+    event.remove("vintageimprovements:netherite_rod")
+    event.remove("vintageimprovements:vanadium_rod")
+    event.remove("vintageimprovements:zinc_rod")//去除原本金属杆类合成配方
+    vi.curving(//冲压铁杆
+        "kubejs:iron_rod"//输出铁杆
+        ,"minecraft:iron_ingot"//输入铁锭
+    )
+    .mode(3)//w冲压头
+    vi.curving(//冲压安山合金杆
+        "vintageimprovements:andesite_rod",
+        "create:andesite_alloy"
+    )
+    .mode(3)
+    vi.curving(//下届合金杆
+        "vintageimprovements:netherite_rod",
+        "minecraft:netherite_ingot"
+    )
+    .mode(3)
+    vi.curving(//钒杆
+        "vintageimprovements:vanadium_rod",
+        "vintageimprovements:vanadium_ingot"
+    )
+    .mode(3)
+    vi.curving(//锌杆
+        "vintageimprovements:zinc_rod",
+        "create:zinc_ingot"
+    )
+    .mode(3)
+//============================================================//
 
-    vi.curving("kubejs:iron_rod","minecraft:iron_ingot").mode(3)
 
 
     vi.curving(
         'kubejs:iron_part_u',  // 输出物品
-        'minecraft:iron_ingot'  // 输入物品
-    ).mode(4)   // 头物品: V形弯曲机头
-        .headDamage(50);    // 每处理一次扣 50 耐久
+        'minecraft:iron_ingot' // 输入物品
+    )
+    .head(4)   // 头物品: V形弯曲机头
+    .headDamage(50);                     // 每处理一次扣 50 耐久
 
 
 
