@@ -7,6 +7,7 @@ ServerEvents.recipes(event => {
     event.remove({ mod: "qkl" })//移除巧克力人枪包的所有配方
     event.remove({ output: "create:empty_blaze_burner" })//移除烈焰人燃烧室配方，电气时代的锅炉加热器替代
     const create = event.recipes.create//创建一个快捷方式来使用Create的配方方法
+    const vi = event.recipes.vintageimprovements//创建一个快捷方式来使用经典改进(vintageimprovements）的配方方法
     event.shaped(
         "tacz:target",
         [
@@ -55,6 +56,53 @@ ServerEvents.recipes(event => {
     makestring('#create:pulpifiable', 1)
 
 
+
+//========================重写金属杆配方===========================//
+event.remove({output:"vintageimprovements:andesite_rod"})
+event.remove({output:"vintageimprovements:netherite_rod"})
+event.remove({output:"vintageimprovements:vanadium_rod"})
+event.remove({output:"vintageimprovements:zinc_rod"})//去除原本金属杆类合成配方
+
+    vi.curving(//冲压铁杆
+        "kubejs:iron_rod"//输出铁杆
+        ,"minecraft:iron_ingot"//输入铁锭
+    )
+    .mode(3)//w冲压头
+    vi.curving(//冲压安山合金杆
+        "vintageimprovements:andesite_rod",
+        "create:andesite_alloy"
+    )
+    .mode(3)
+    vi.curving(//下届合金杆
+        "vintageimprovements:netherite_rod",
+        "minecraft:netherite_ingot"
+    )
+    .mode(3)
+    vi.curving(//钒杆
+        "vintageimprovements:vanadium_rod",
+        "vintageimprovements:vanadium_ingot"
+    )
+    .mode(3)
+    vi.curving(//锌杆
+        "vintageimprovements:zinc_rod",
+        "create:zinc_ingot"
+    )
+    .mode(3)
+
+
+//========================重写金属线配方==================================//
+event.remove({output:"vintageimprovements:andesite_wire"})//安山合金线
+event.remove({output:"vintageimprovements:netherite_wire"})//下届合金线
+event.remove({output:"vintageimprovements:vanadium_wire"})//钒线
+event.remove({output:"vintageimprovements:zinc_wire"})//锌线
+event.remove({output:"vintageimprovements:brass_wire"})//黄铜线
+
+create.cutting('kubejs:iron_wire', "create:iron_sheet")//铁线
+create.cutting("vintageimprovements:andesite_wire","vintageimprovements:andesite_sheet")//安山合金线
+create.cutting("vintageimprovements:netherite_wire","vintageimprovements:netherite_sheet")//下届合金线
+create.cutting("vintageimprovements:vanadium_wire","vintageimprovements:vanadium_sheet")//钒线
+create.cutting("vintageimprovements:zinc_wire","vintageimprovements:zinc_sheet")//锌线
+create.cutting("vintageimprovements:brass_wire","vintageimprovements:brass_sheet")//黄铜线
 
 
 

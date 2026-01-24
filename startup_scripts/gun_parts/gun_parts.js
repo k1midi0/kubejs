@@ -642,6 +642,9 @@ StartupEvents.registry('item', event => {
     event.create('iron_rod')//铁杆
         .displayName('铁杆')
 
+    event.create('iron_wire')//铁线
+        .displayName('铁线')
+
     event.create('rough_casing')//机匣粗胚
         .displayName('机匣粗胚')
 
