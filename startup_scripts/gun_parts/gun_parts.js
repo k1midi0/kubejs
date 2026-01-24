@@ -12,14 +12,14 @@ StartupEvents.registry('item', event => {
     /*---------------- 手枪机匣类分割线 ----------------*/
     event.create('geckojs:m1911_receiver', 'animatable')//柯尔特M1911手枪的机匣零件
         .defaultGeoModel()//使用标准路径geckojs模型
-            .displayName('柯尔特M1911机匣')
+        .displayName('柯尔特M1911机匣')
 
     event.create('geckojs:m1912_receiver', 'animatable')//斯太尔M1912（8发半自动型）、斯太尔M1912/P16（16发全自动型）的机匣零件
         .defaultGeoModel()//使用标准路径geckojs模型
         .displayName('斯太尔M1912机匣')
 
     event.create('geckojs:m1912_auto_receiver', 'animatable')//斯太尔M1912/P16（16发全自动型）的机匣零件
-                .geoModel(geo => {//和m1912共用模型
+        .geoModel(geo => {//和m1912共用模型
             geo.setSimpleModel('geckojs:geo/item/m1912_receiver.geo.json');
             geo.setSimpleTexture('geckojs:textures/item/m1912_receiver.png');
         })
@@ -593,72 +593,63 @@ StartupEvents.registry('item', event => {
     /*---------------- 枪托类分割线 ----------------*/
     //安山合金可能替换为专门的聚合物材料
     event.create('stock_wood_light')//剥皮木轻型枪托
-
         .displayName('剥皮木轻型枪托')
 
     event.create('stock_wood_heavy')//剥皮木重型枪托
-
         .displayName('剥皮木重型枪托')
 
     event.create('stock_alloy_light')//安山合金轻型聚合物枪托
-
         .displayName('安山合金轻型枪托')
 
     event.create('stock_alloy_heavy')//安山合金重型聚合物枪托
-
         .displayName('安山合金重型枪托')
 
     /*---------------- 护木类分割线 ----------------*/
     //安山合金可能替换为专门的聚合物材料
     event.create('foregrip_wood_light')//剥皮木轻型护木
-
         .displayName('剥皮木轻型护木')
 
     event.create('foregrip_wood_heavy')//剥皮木重型护木
-
         .displayName('剥皮木重型护木')
 
     event.create('foregrip_alloy_light')//安山合金轻型聚合物护木
-
         .displayName('安山合金轻型护木')
 
     event.create('foregrip_alloy_heavy')//安山合金重型聚合物护木
-
         .displayName('安山合金重型护木')
 
     /*---------------- 机械瞄具类分割线 ----------------*/
     //铁粒可能替换为专门的轻金属材料
     event.create('iron_sight_light')//铁粒轻型机械瞄具
-
         .displayName('铁粒轻型机械瞄具')
 
     event.create('iron_sight_heavy')//铁粒重型机械瞄具
-
         .displayName('铁粒重型机械瞄具')
 
     /*---------------- 基础零件类分割线 ----------------*/
     event.create('wood_chip')//木片
-
         .displayName('木片')
 
     event.create('iron_part_t')//T型铁零件
-
         .displayName('T型铁零件')
 
     event.create('iron_part_l')//L型铁零件
-
         .displayName('L型铁零件')
 
     event.create('iron_part_link')//连杆铁零件
-
         .displayName('连杆铁零件')
 
     event.create('iron_rod')//铁杆
         .displayName('铁杆')
-        
-    event.create('rough_casing')//机匣粗胚
 
+    event.create('rough_casing')//机匣粗胚
         .displayName('机匣粗胚')
+
+    event.create('trigger')//扳机
+        .displayName('扳机')
+
+    event.create('hammer')//击锤
+        .displayName('击锤')
 
     event.create('ironboard_sword', 'sword')//铁管
         .displayName('铁管')

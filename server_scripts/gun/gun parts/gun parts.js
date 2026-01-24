@@ -59,9 +59,9 @@ ServerEvents.recipes(event => {
 
     vi.curving(
         'kubejs:rough_casing',  // 输出物品
-        'minecraft:iron_ingot' // 输入物品
-    ).head('vintageimprovements:v_shaped_curving_head')   // 头物品: V形弯曲机头
-        .headDamage(50);                     // 每处理一次扣 50 耐久
+        'minecraft:iron_ingot'  // 输入物品
+    ).mode(4)   // 头物品: V形弯曲机头
+        .headDamage(50);    // 每处理一次扣 50 耐久
 
 
 
