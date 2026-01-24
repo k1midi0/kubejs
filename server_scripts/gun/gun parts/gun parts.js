@@ -54,6 +54,15 @@ ServerEvents.recipes(event => {
         "create:iron_sheet"
     )
 
+    
+    VI.curving(
+        'kubejs:rough_casing',  // 输出物品
+        'minecraft:iron_ingot' // 输入物品
+    ).head('vintageimprovements:v_shaped_curving_head')   // 头物品: V形弯曲机头
+        .headDamage(50);                     // 每处理一次扣 50 耐久
+
+
+
 
 
     create.mechanical_crafting('geckojs:m1911_receiver', [

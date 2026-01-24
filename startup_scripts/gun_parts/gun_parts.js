@@ -653,9 +653,10 @@ StartupEvents.registry('item', event => {
 
         .displayName('连杆铁零件')
 
-    event.create('Rough_casing')//机匣粗胚
+    event.create('rough_casing')//机匣粗胚
 
         .displayName('机匣粗胚')
+
     event.create('ironboard_sword', 'sword')//铁管
 
         .displayName('铁管')
